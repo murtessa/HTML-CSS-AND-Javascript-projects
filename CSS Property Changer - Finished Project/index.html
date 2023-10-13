@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> CSS Property Changer</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Vertical Position -->
+      <div class="controls">
+        <h3 class="controls-heading">Position Y</h3>
+        <div class="container">
+          <div class="input-container vertical">
+            <input type="range" id="position-y" min="0" max="500" value="0" />
+            <label for="position-y">
+              <span>0</span>
+              <span>500</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Position -->
+      <div class="controls">
+        <h3 class="controls-heading">Position X</h3>
+        <div class="container">
+          <div class="input-container horizontal">
+            <label for="position-x">
+              <span>0</span>
+              <span>1000</span>
+            </label>
+            <input type="range" id="position-x" min="0" max="1000" value="0" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Size -->
+      <div class="controls">
+        <h3 class="controls-heading">Size</h3>
+        <div class="container">
+          <div class="input-container horizontal">
+            <label for="size">
+              <span>0</span>
+              <span>2</span>
+            </label>
+            <input type="range" id="size" min="0" max="2" step="0.1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Shape -->
+      <div class="controls">
+        <h3 class="controls-heading">Shape</h3>
+        <div class="container center">
+          <select id="shape-select">
+            <option value="1">Square</option>
+            <option value="2">Circle</option>
+          </select>
+
+          <button id="ok-btn">OK</button>
+        </div>
+      </div>
+
+      <!-- RGBA -->
+      <div class="controls">
+        <h3 class="controls-heading">RGBA</h3>
+        <div class="container rgba-container">
+          <input type="range" min="0" max="255" id="rgba-r" value="0" /><label
+            for="rgba-r"
+            >r</label
+          >
+          <input type="range" min="0" max="255" id="rgba-g" value="0" /><label
+            for="rgba-g"
+            >g</label
+          >
+          <input type="range" min="0" max="255" id="rgba-b" value="0" /><label
+            for="rgba-b"
+            >b</label
+          >
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            id="rgba-a"
+            value="1"
+          /><label for="rgba-a">a</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="block"></div>
+    </div>
+    <!-- --------------------------- -->
+    <!-- JS File -->
+    <script src="app.js"></script>
+  </body>
+</html>

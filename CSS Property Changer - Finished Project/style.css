@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 25px auto 0px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.controls {
+  width: 200px;
+  height: 200px;
+  background: #444;
+  color: #fff;
+}
+
+h3 {
+  margin: 25px 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.vertical {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.vertical input {
+  transform: rotate(90deg);
+  width: 75px;
+}
+
+.vertical label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.horizontal {
+  width: 100px;
+  margin: 40px auto;
+}
+
+.horizontal input {
+  width: 100px;
+}
+
+.horizontal label {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+#shape-select {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+#ok-btn {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.rgba-container {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.rgba-container input {
+  width: 80px;
+  margin: 5px auto;
+}
+
+.rgba-container label {
+  margin-left: 10px;
+}
+
+.container {
+  margin-top: 20px;
+  position: relative;
+}
+
+#block {
+  width: 150px;
+  height: 150px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 40px;
+}
