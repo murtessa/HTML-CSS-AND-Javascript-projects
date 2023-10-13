@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.container {
+  height: 700px;
+  width: 1400px;
+  position: relative;
+}
+
+.start h1 {
+  font-weight: 100;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #41444b;
+  padding: 20px 50px;
+  color: white;
+}
+
+.quiz {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 20px;
+
+  visibility: hidden;
+}
+
+.quiz > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-size: 35px;
+  letter-spacing: 2px;
+  background-color: rgba(247, 247, 247, 0.7);
+  place-self: center;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* .quiz .question {
+  background-color: lightcyan;
+} */
+
+/* .quiz .choices {
+  background-color: lightsalmon;
+} */
+
+/* .quiz .timer {
+  background-color: lightskyblue;
+} */
+
+/* .quiz .progress {
+  background-color: lemonchiffon;
+} */
+
+/* Answer Choices */
+.choices {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.choice {
+  cursor: pointer;
+  background-color: rgba(27, 118, 141, 0.7);
+  padding: 7px 15px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Answer Timer */
+.timer {
+  align-self: flex-end;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 40px;
+  color: rgb(27, 118, 141);
+}
+
+.time-gauge-bg,
+.time-gauge {
+  position: absolute;
+  top: 78%;
+  left: 22%;
+}
+
+.time-gauge-bg {
+  height: 10px;
+  width: 800px;
+  background-color: lightgrey;
+}
+
+.time-gauge {
+  height: 10px;
+  background-color: rgb(179, 6, 247);
+}
+
+/* Progress Container */
+.progress-box {
+  height: 30px;
+  width: 30px;
+  background-color: lightgrey;
+  margin-left: 15px;
+}
+
+/* Score Container */
+.score-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 50px 100px;
+
+  visibility: hidden;
+}
+
+.score-container h2 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
