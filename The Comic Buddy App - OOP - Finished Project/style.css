@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: url("deadpool-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+  line-height: 1.7;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.wrapper {
+  display: flex;
+  padding: 50px;
+  align-items: flex-start;
+}
+
+.superhero-entry {
+  margin-right: 150px;
+  height: 400px;
+}
+
+form {
+  padding: 25px;
+  width: 500px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: #00577a94;
+  font-size: 20px;
+  color: white;
+}
+
+.add-superhero {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid #00577a94;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.25s ease-in;
+}
+
+.add-superhero:hover {
+  background-color: #00577a94;
+}
+
+.superhero-list {
+  margin-top: 25px;
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.superhero-list-header {
+  margin-bottom: 15px;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: #00577a94;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  padding: 15px;
+}
+
+h2:last-child {
+  opacity: 0;
+}
+
+.superhero-list-header,
+.superhero-list-data {
+  width: 100%;
+}
+
+.superhero-list-data {
+  max-height: 100%;
+  overflow: auto;
+  padding: 0 15px;
+  background-color: rgba(80, 53, 110, 0.466);
+}
+
+ul#list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  padding-left: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+i {
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  justify-self: center;
+}
+
+.validation {
+  height: 200px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 50px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+}
+
+.validate-success {
+  line-height: 130px;
+  background-color: rgba(55, 136, 37, 0.9);
+  display: none;
+}
+
+.validate-error {
+  display: none;
+  background-color: rgba(136, 58, 37, 0.9);
+}
+
+.show-validation {
+  display: block;
+}
+
+.remove-superhero {
+  display: none;
+}
