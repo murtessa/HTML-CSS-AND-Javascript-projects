@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Currency Companion - Async Await</title>
+  </head>
+  <body>
+    <div class="input-error">Please Fill Out All The Input Fields</div>
+    <div class="invalid-code">Invalid Currency Code</div>
+
+    <h1>Currency Companion</h1>
+
+    <form>
+      <input
+        type="text"
+        class="from-currency"
+        placeholder="From Currency Code"
+      />
+      <input type="text" class="to-currency" placeholder="To Currency Code" />
+      <input type="number" class="amount" placeholder="Exchange Amount" />
+      <button class="get-rate">Get Rate</button>
+    </form>
+
+    <ul class="currency-list">
+      <li class="currency-item"></li>
+    </ul>
+    <!-- -------------------------- -->
+    <!-- JS File -->
+    <script src="app.js"></script>
+  </body>
+</html>
